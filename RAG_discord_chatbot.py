@@ -46,7 +46,7 @@ async def q(context, query):
         i += 1
         db_name = f'db_{i}'
     message = await context.send('請稍後')
-    #文件載入
+    #load PDF
     loader = PyMuPDFLoader(url)
     PDF_data = loader.load()
 
